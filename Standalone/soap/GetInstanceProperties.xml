@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<SOAP-ENV:Header>
+<sapsess:Session xlmns:sapsess="http://www.sap.com/webas/630/soap/features/session/">
+<enableSession>true</enableSession>
+</sapsess:Session>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+<ns1:GetInstanceProperties xmlns:ns1="urn:SAPControl"></ns1:GetInstanceProperties>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
