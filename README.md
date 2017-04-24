@@ -13,7 +13,7 @@ All credit goes to :
 * ERPScan (@_chipik)
 * ERPSEC - Joris van De Vis (@jvis)
 * Chris John Riley  (@ChrisJohnRiley)
-* Agnivesh Sathasivam (@nmonkee)
+* Agnivesh Sathasivam and Dave Hartley (@nmonkee)
 * Martin Gallo (@MartinGalloAr)
 
 ### What is this repository for? 
