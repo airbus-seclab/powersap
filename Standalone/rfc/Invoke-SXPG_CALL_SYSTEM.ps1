@@ -3,7 +3,8 @@
       OS command execution via SXPG_CALL_SYSTEM
       Only ENV command implemented 
     .Description
-      Calls SXPG_CALL_SYSTEM Remote FM of an SAP system with ENV command.
+      Calls SXPG_CALL_SYSTEM Remote FM of an SAP system and executes only 
+      predefined SM49 commands. 
     .Author
       @_Sn0rkY
 
