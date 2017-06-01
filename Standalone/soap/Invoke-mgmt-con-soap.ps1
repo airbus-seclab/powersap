@@ -15,6 +15,7 @@ Param(
 [alias("t")]
 [string]$target,
 
+# Second arg should be the file of SAPControl used. eg: GetEnv.xml 
 [parameter(Mandatory=$true)]
 [string]$SAPControl
 )
