@@ -13,10 +13,6 @@
     #-Set Parameters
     Param(
     [parameter(Mandatory = $true)]
-    [alias("u")]
-    [string]$username,
-
-    [parameter(Mandatory = $true)]
     [alias("t")]
     [string]$target,
 
@@ -24,6 +20,10 @@
     [alias("c")]
     [string]$client,
   
+    [parameter(Mandatory = $true)]
+    [alias("u")]
+    [string]$username,
+    
     [parameter(Mandatory = $true)]
     [string]$password = $( Read-Host -asSecureString "Input password" )
     )
@@ -71,4 +71,3 @@ $method = 'post'
 Execute-SOAPRequest  
 
 #-End
-
