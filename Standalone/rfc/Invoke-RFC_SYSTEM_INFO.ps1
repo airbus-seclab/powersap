@@ -32,17 +32,21 @@
     #-Set Parameters
     Param(
     [parameter(Mandatory = $true)]
-    [alias("u")]
-    [string]$username,
-
-    [parameter(Mandatory = $true)]
     [alias("t")]
     [string]$target,
 
     [parameter(Mandatory = $true)]
+    [alias("s")]
+    [string]$sysnr,	
+	
+    [parameter(Mandatory = $true)]
     [alias("c")]
     [string]$client,
   
+    [parameter(Mandatory = $true)]
+    [alias("u")]
+    [string]$username,
+    
     [parameter(Mandatory = $true)]
     [string]$password = $( Read-Host -asSecureString "Input password" )
     )
@@ -51,6 +55,7 @@
         $cfgParams = New-Object SAP.Middleware.Connector.RfcConfigParameters
         $cfgParams.Add("NAME", "TEST")
         $cfgParams.Add("ASHOST", $target)
+       # systemnumber is by default 00 
         $cfgParams.Add("SYSNR", "00")
         $cfgParams.Add("CLIENT", $client)
         $cfgParams.Add("USER", $username)
