@@ -14,10 +14,6 @@
 #-Set Parameters
     Param(
     [parameter(Mandatory = $true)]
-    [alias("u")]
-    [string]$username,
-
-    [parameter(Mandatory = $true)]
     [alias("t")]
     [string]$target,
 
@@ -25,6 +21,10 @@
     [alias("c")]
     [string]$client,
   
+    [parameter(Mandatory = $true)]
+    [alias("u")]
+    [string]$username,
+    
     [parameter(Mandatory = $true)]
     [string]$password = $( Read-Host -asSecureString "Input password" )
     )
@@ -62,15 +62,13 @@ $postParams = '<?xml version="1.0" encoding="utf-8" ?><env:Envelope xmlns:xsd="h
 #$soapreq = Invoke-WebRequest $url -Method $method -ContentType "text/xml" -InFile RFC_READ_TABLE2.xml -Headers $Headers
 $soapreq = Invoke-WebRequest $url -Method $method -ContentType "text/xml" -Body $postParams -Headers $Headers
 
-
-
 WriteXmlToScreen $soapreq.Content
 #Write-Host $soapreq.Content
 } 
 
 #-Main
 
-$url = 'http://172.16.141.12:8000/sap/bc/soap/rfc'
+$url = 'http://'+$target+':8000/sap/bc/soap/rfc'
 $method = 'post'
 
 Execute-SOAPRequest  
