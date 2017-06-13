@@ -1,15 +1,15 @@
 # PowerSAP 
 PowerSAP is a simple powershell re-implementation of popular & effective
-techniques of all public tools *such as* Bizploit, Metasploitauxiliaries, or 
-python scripts available on Internet. There is no new vulnerability or 
-undisclosed vulnerability as part of this aggregation.
+techniques of all public tools *such as* Bizploit, Metasploit auxiliary modules, or 
+python scripts available on the Internet. This re-implementation does not
+contain any new or undisclosed vulnerability.
 
 PowerSAP allows to reach SAP RFC with .Net connector 'NCo'.
 
 ## Credit
-All credit goes to :
+All credit goes to:
 
-* Onapsis  - Mariano, Jordan …
+* Onapsis - Mariano, Jordan…
 * ERPScan (@_chipik)
 * ERPSEC - Joris van De Vis (@jvis)
 * Chris John Riley  (@ChrisJohnRiley)
@@ -46,7 +46,7 @@ Invoke PS scripts in the Standalone folder.
 ### Contributions
 Feel free to contribute and add features.
 
-### Screeshots
+### Screenshots
 Simple bruteforce attack on SAP RFC
 ![PowerSAP2](https://bitbucket.org/Sn0rkY/powersap/downloads/RFC-BF.png)
 
