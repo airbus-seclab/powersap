@@ -18,29 +18,27 @@ All credit goes to:
 
 ### What is this repository for? 
 
-* Quick summary
-Powershell SAP assessment tool 
+* Quick summary: Powershell SAP assessment tool 
 
-* Version 
-0.1
+* Version: 0.1
 
-* Dependencies
-.Net connector "NCo"
+* Dependencies: .Net connector "NCo"
 https://websmp201.sap-ag.de/public/connectors
 
-* Configuration
-Copy sapnco.dll & sapnco_utils.dll in NCo_x86/NCo_x64 folders. 
+* Configuration: Copy sapnco.dll & sapnco_utils.dll in NCo_x86/NCo_x64 folders. 
 
 ## Examples
 
-* Test your .Net Connector 'NCo' 
+* Test your .Net Connector 'NCo':
+
 PS C:\PowerSAP\Standalone> .\Get-NCoVersion.ps1
 
 NCo Version: 3.0.13.0
 Patch Level: 525
 SAP Release: 720
 
-* How to run tests
+* How to run testis:
+
 Invoke PS scripts in the Standalone folder.
 
 ### Contributions
@@ -48,8 +46,10 @@ Feel free to contribute and add features.
 
 ### Screenshots
 Simple bruteforce attack on SAP RFC
+
 ![PowerSAP2](https://airbus-seclab.github.io/powersap/RFC-BF.png)
 
 READ_TABLE RFC function module call through SOAP request
+
 ![PowerSAP3](https://airbus-seclab.github.io/powersap/SOAP-read-TABLE.png)
 
