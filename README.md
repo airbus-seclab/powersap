@@ -19,7 +19,7 @@ All credit goes to :
 ### What is this repository for? 
 
 * Quick summary
-SAP Powershell assessment tool 
+Powershell SAP assessment tool 
 
 * Version 
 0.1
