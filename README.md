@@ -48,8 +48,8 @@ Feel free to contribute and add features.
 
 ### Screeshots
 Simple bruteforce attack on SAP RFC
-![PowerSAP2](https://bitbucket.org/Sn0rkY/powersap/downloads/RFC-BF.png)
+![PowerSAP2](https://airbus-seclab.github.io/powersap/RFC-BF.png)
 
 READ_TABLE RFC function module call through SOAP request
-![PowerSAP3](https://bitbucket.org/Sn0rkY/powersap/downloads/SOAP-read-TABLE.png)
+![PowerSAP3](https://airbus-seclab.github.io/powersap/SOAP-read-TABLE.png)
 
