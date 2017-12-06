@@ -2,7 +2,7 @@
     .Synopsis
       Calls SOAP SXPG_COMMAND_EXECUTE
     .Description
-      Execute define command in SM49/SM69
+      Execute defined command in SM49/SM69
       Calls the function SXPG_COMMAND_EXECUTE, through the /sap/bc/soap/rfc SOAP 
       $target like : http(s)://ip:port
     .Author
