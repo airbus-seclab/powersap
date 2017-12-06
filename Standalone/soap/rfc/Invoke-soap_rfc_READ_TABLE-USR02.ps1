@@ -13,7 +13,7 @@
 
 #-Set Parameters
     Param(
-    [parameter(Mandatory = $true)]
+    [parameter(Mandatory = $true, HelpMessage="target like : http(s)://ip:port")]
     [alias("t")]
     [string]$target,
 
@@ -42,10 +42,8 @@ function WriteXmlToScreen ([xml]$xml)
 
 function Execute-SOAPRequest 
 { 
-$user = $username
-$pass = $password 
 
-$pair = "$($user):$($pass)"
+$pair = "$($username):$($password)"
 
 $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
 $basicAuthValue = "Basic $encodedCreds"
@@ -68,7 +66,7 @@ WriteXmlToScreen $soapreq.Content
 
 #-Main
 
-$url = 'http://'+$target+':8000/sap/bc/soap/rfc'
+$url = $target+'/sap/bc/soap/rfc'
 $method = 'post'
 
 Execute-SOAPRequest  
