@@ -76,7 +76,7 @@
  [alias("t")]
  [string]$targetinput
  )
- $cvsimport = import-csv .\dic_rfc.csv
+ $cvsimport = import-csv .\..\dic_rfc.csv
  ForEach($item in $cvsimport)
  {
  $target   = $targetinput
