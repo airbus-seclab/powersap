@@ -15,12 +15,13 @@ All credit goes to:
 * Chris John Riley  (@ChrisJohnRiley)
 * Agnivesh Sathasivam and Dave Hartley (@nmonkee)
 * Martin Gallo (@MartinGalloAr)
+* Yvan GENUER (@_1ggy)
 
 ### What is this repository for? 
 
 * Quick summary: Powershell SAP assessment tool 
 
-* Version: 0.1
+* Version: 1.1
 
 * Dependencies: .Net connector "NCo"
 https://websmp201.sap-ag.de/public/connectors
