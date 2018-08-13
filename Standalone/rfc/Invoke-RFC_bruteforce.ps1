@@ -36,8 +36,7 @@
         $cfgParams = New-Object SAP.Middleware.Connector.RfcConfigParameters
         $cfgParams.Add("NAME", "TEST")
         $cfgParams.Add("ASHOST", $target)
-       # systemnumber is by default 00 
-        $cfgParams.Add("SYSNR", "00")
+        $cfgParams.Add("SYSNR", $sysnr)
         $cfgParams.Add("CLIENT", $client)
         $cfgParams.Add("USER", $username)
         $cfgParams.Add("PASSWD", $password)
